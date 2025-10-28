@@ -1,0 +1,257 @@
+/* Variáveis para cores */
+:root {
+    /* Tons de Terra/Cerrado */
+    --terra-primaria: #A0522D;       /* Marrom-Terra / Sienna - para destaque */
+    --terra-secundaria: #D2B48C;     /* Marrom-Claro / Tan - para fundos ou hover */
+    --terra-fundo: #FAF0E6;          /* Creme/Areia Suave - para fundo principal */
+    --terra-texto: #4F301F;          /* Marrom Escuro - para texto */
+    --branco: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: var(--terra-fundo);
+    color: var(--terra-texto);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: var(--terra-primaria); 
+    color: var(--branco);
+    padding: 1rem 0;
+    border-bottom: 3px solid #8B4513; 
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: var(--terra-secundaria); 
+}
+
+/* Seções */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero {
+    /* Mantenha esta URL de placeholder ou substitua por uma imagem real de fundo com tons terrosos */
+    background: url('https://via.placeholder.com/1500x500/A0522D/ffffff?text=Fundo+Cerrado+Esperança') no-repeat center center/cover;
+    
+    /* ALTERAÇÃO: Usando a cor marrom escuro da paleta */
+    color: var(--terra-texto);
+    
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--branco);
+    background: var(--terra-primaria);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #8B4513; 
+}
+
+.about, .projects, .donate, .contact {
+    background: var(--branco);
+    margin-bottom: 20px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* --------------------------------- */
+/* Estilo para a HOME (Texto de Impacto) */
+/* --------------------------------- */
+.impact-text {
+    background-color: var(--terra-fundo); 
+    padding: 60px 0;
+    text-align: center;
+    border-top: 5px solid var(--terra-secundaria);
+}
+
+.impact-text h2 {
+    color: var(--terra-primaria);
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.impact-text h3 {
+    color: var(--terra-texto);
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.impact-text p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
+
+/* --------------------------------- */
+/* Estilo para SOBRE NÓS (MVV) */
+/* --------------------------------- */
+.mission-vision-values {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--terra-fundo); 
+    border-radius: 8px;
+    text-align: left;
+}
+
+.mission-vision-values h3 {
+    color: var(--terra-primaria);
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+
+.mission-vision-values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mission-vision-values li {
+    margin-bottom: 10px;
+}
+
+.value-highlight {
+    font-weight: bold;
+    color: var(--terra-texto);
+}
+
+/* --------------------------------- */
+/* Estilo para PROJETOS */
+/* --------------------------------- */
+.project-item {
+    background: var(--branco);
+    padding: 20px;
+    margin-bottom: 25px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    color: var(--terra-primaria);
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Estilo para imagens dentro dos projetos */
+.project-image {
+    max-width: 100%; 
+    height: auto;    
+    display: block; 
+    margin: 15px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* --------------------------------- */
+/* Estilo para CONTATO */
+/* --------------------------------- */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+form textarea {
+    resize: vertical; 
+    min-height: 100px;
+}
+
+.doacao-incentivo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--terra-primaria); 
+    padding: 10px;
+    border: 2px dashed var(--terra-secundaria);
+    margin: 20px 0;
+    background-color: #f7f3ee; 
+    border-radius: 5px;
+}
+
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+.contact-info h3 {
+    color: var(--terra-primaria);
+}
+
+
+footer {
+    background: var(--terra-primaria);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
