@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivendo com Esperança - Contato</title> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="app-content">
         <section id="contato" class="contact">
             <div class="container">
                 <h2>Entre em Contato</h2>
@@ -30,11 +30,19 @@
                 
                 <p>Ficaremos felizes em ouvir você. Preencha o formulário ou use nossos canais diretos.</p>
                 
-                <form>
-                    <input type="text" placeholder="Seu Nome" required>
-                    <input type="email" placeholder="Seu E-mail" required>
-                    <input type="text" placeholder="Assunto (Doação, Parceria, Dúvida)" required>
-                    <textarea placeholder="Sua Mensagem"></textarea>
+                <form id="contactForm">
+                    <label for="name">Seu Nome Completo:</label>
+                    <input type="text" id="name" placeholder="Seu Nome" name="name">
+                    
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" placeholder="Seu E-mail" name="email">
+                    
+                    <label for="subject">Assunto:</label>
+                    <input type="text" id="subject" placeholder="Assunto (Doação, Parceria, Dúvida)" name="subject">
+                    
+                    <label for="message">Sua Mensagem:</label>
+                    <textarea id="message" placeholder="Sua Mensagem" name="message"></textarea>
+                    
                     <button type="submit" class="btn">Enviar Mensagem</button>
                 </form>
 
@@ -53,5 +61,7 @@
             <p>&copy; 2025 Vivendo com Esperança. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
+    <script src="js/formValidation.js"></script>
 </body>
 </html>
